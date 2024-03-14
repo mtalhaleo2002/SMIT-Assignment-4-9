@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Simple Web Page</title>
+</head>
+
+<body>
+    <!-- Assignment 5 Implement image in img tag  -->
+    <img src="images/quokka.jpg" alt="A family of
+ quokka" title="The quokka is an Australian
+ marsupial that is similar in size to the
+ domestic cat." /><br>
+
+    <img src="images/quokka.jpg" alt="A family of
+ quokka" width="600" height="450" /><br>
+
+    <img src="images/bird.gif" alt="Bird" width="100" height="100" />
+    <p>There are around 10,000 living species of birds
+        that inhabit different ecosystems from the
+        Arctic to the Antarctic. Many species undertake
+        long distance annual migrations, and many more
+        perform shorter irregular journeys.</p>
+    <hr />
+    <p><img src="images/bird.gif" alt="Bird" width="100" height="100" />There are around 10,000 living
+        species of birds that inhabit different
+        ecosystems from the Arctic to the Antarctic. Many
+        species undertake long distance annual
+        migrations, and many more perform shorter
+        irregular journeys.</p>
+    <hr />
+    <p>There are around 10,000 living species of birds
+        that inhabit different ecosystems from the
+        Arctic to the Antarctic.<img src="images/bird.gif" alt="Bird" width="100" height="100" />Many species undertake
+        long
+        distance annual migrations, and many more perform
+        shorter irregular journeys.</p>
+    <hr />
+
+    <figure>
+        <img src="images/otters.jpg" alt="Photograph of
+     two sea otters floating in water">
+        <br />
+        <figcaption>Sea otters hold hands when they
+            sleep so they don't drift away from each
+            other.</figcaption>
+    </figure>
+
+    <!-- Assignment 6 Implement Tables -->
+
+    <table>
+        <tr>
+            <td>15</td>
+            <td>15</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>60</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>90</td>
+            <td>90</td>
+        </tr>
+    </table> <br> <br>
+
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th scope="row">Tickets sold:</th>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <th scope="row">Total sales:</th>
+            <td>$600</td>
+            <td>$675</td>
+        </tr>
+    </table> <br> <br>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td colspan="2">Geography</td>
+            <td>Math</td>
+            <td>Art</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">Gym</td>
+            <td>Home Ec</td>
+        </tr>
+    </table> <br> <br>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>ABC</th>
+            <th>BBC</th>
+            <th>CNN</th>
+        </tr>
+        <tr>
+            <th>6pm - 7pm</th>
+            <td rowspan="2">Movie</td>
+            <td>Comedy</td>
+            <td>News</td>
+        </tr>
+        <tr>
+            <th>7pm - 8pm</th>
+            <td>Sport</td>
+            <td>Current Affairs</td>
+        </tr>
+    </table> <br> <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Income</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1st January</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>2nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <!-- additional rows as above -->
+            <tr>
+                <th>31st January</th>
+                <td>129</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>7824</td>
+                <td>1241</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Assignment 7 Create Forms -->
+
+    <form action="http://www.example.com/subscribe.php" method="get">
+        <p>This is where the form controls will appear.
+        </p>
+    </form> <br>
+
+    <form action="http://www.example.com/login.php">
+        <p>Username:
+            <input type="text" name="username" size="15" maxlength="30" />
+        </p>
+    </form> <br>
+
+    <form action="http://www.example.com/login.php">
+        <p>Username:
+            <input type="text" name="username" size="15" maxlength="30" />
+        </p>
+        <p>Password:
+            <input type="password" name="password" size="15" maxlength="30" />
+        </p>
+    </form> <br>
+
+    <form action="http://www.example.com/comments.php">
+        <p>What did you think of this gig?</p>
+        <textarea name="comments" cols="20" rows="4">Enter
+         your comments...</textarea>
+    </form> <br>
+
+    <form action="http://www.example.com/profile.php">
+        <p>Please select your favorite genre:
+            <br />
+            <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+            <input type="radio" name="genre" value="pop" />
+            Pop
+            <input type="radio" name="genre" value="jazz" />
+            Jazz
+        </p>
+    </form> <br>
+
+    <form action="http://www.example.com/profile.php">
+        <p>Please select your favorite music service(s):
+            <br />
+            <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+            <input type="checkbox" name="service" value="lastfm" /> Last.fm
+            <input type="checkbox" name="service" value="spotify" /> Spotify
+        </p>
+    </form> <br>
+
+    <form action="http://www.example.com/profile.php">
+        <p>What device do you listen to music on?</p>
+        <select name="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+    </form> <br>
+
+    <form action="http://www.example.com/profile.php">
+        <p>Do you play any of the following instruments?
+            (You can select more than one option by holding
+            down control on a PC or command key on a Mac
+            while selecting different options.)</p>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">
+                Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+    </form> <br>
+
+    <form action="http://www.example.com/upload.php" method="post">
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" /><br />
+        <input type="submit" value="Upload" />
+    </form> <br>
+
+    <form action="http://www.example.com/subscribe.php">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="submit" name="subscribe" value="Subscribe" />
+    </form> <br>
+
+    <form action="http://www.example.org/subscribe.php">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="image" src="images/subscribe.jpg" width="100" height="20" />
+    </form> <br>
+
+    <form action="http://www.example.com/add.php">
+        <button><img src="images/add.gif" alt="add" width="10" height="10" /> Add</button>
+        <input type="hidden" name="bookmark" value="lyrics" />
+    </form> <br>
+
+    <label>Age: <input type="text" name="age" /></label>
+    <br />
+    Gender:
+    <input id="female" type="radio" name="gender" value="f">
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="male">Male</label> <br>
+
+    <fieldset>
+        <legend>Contact details</legend>
+        <label>Email:<br />
+            <input type="text" name="email" /></label><br />
+        <label>Mobile:<br />
+            <input type="text" name="mobile" /></label><br />
+        <label>Telephone:<br />
+            <input type="text" name="telephone" /></label>
+    </fieldset> <br>
+
+    <form action="http://www.example.com/login/" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required="required" /></title><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" required="required" />
+        <input type="submit" value="Submit" />
+    </form> <br>
+
+    <form action="http://www.example.com/bookings/" method="post">
+        <label for="username">Departure date:</label>
+        <input type="date" name="depart" />
+        <input type="submit" value="Submit" />
+    </form> <br>
+
+    <form action="http://www.example.org/subscribe.php">
+        <p>Please enter your email address:</p>
+        <input type="email" name="email" />
+        <input type="submit" value="Submit" />
+    </form> <br>
+
+    <form action="http://www.example.org/profile.php">
+        <p>Please enter your website address:</p>
+        <input type="url" name="website" />
+        <input type="submit" value="Submit" />
+    </form> <br>
+
+    <form action="http://www.example.org/search.php">
+        <p>Search:</p>
+        <input type="search" name="search" />
+        <input type="submit" value="Search" />
+    </form> <br>
+
+    <form action="http://www.example.org/search.php">
+        <p>Search:</p>
+        <input type="search" name="search" placeholder="Enter keyword" />
+        <input type="submit" value="Search" />
+    </form> <br>
+
+    <!-- Assignment 8 Extra Markup -->
+
+    <!-- start of introduction -->
+    <h1>Current Exhibitions</h1>
+    <h2>Olafur Eliasson</h2>
+    <!-- end of introduction -->
+    <!-- start of main text -->
+    <p>Olafur Eliasson was born in Copenhagen, Denmark
+        in 1967 to Icelandic parents.</p>
+    <p>He is known for sculptures and large-scale
+        installation art employing elemental materials
+        such as light, water, and air temperature to
+        enhance the viewer's experience.</p>
+    <!-- end of main text -->
+    <!--
+<a href="mailto:info@example.org">Contact</a>
+-->
+
+    <p id="pullquote">Every time I view the sea I feel
+        a calming sense of security, as if visiting my
+        ancestral home; I embark on a voyage of seeing.
+    </p>
+
+    <p class="important">For a one-year period from
+        November 2010, the Marugame Genichiro-Inokuma
+        Museum of Contemporary Art (MIMOCA) will host a
+        cycle of four Hiroshi Sugimoto exhibitions.</p>
+
+    <!-- Block elements -->
+
+    <h1>Hiroshi Sugimoto</h1>
+    <p>The dates for the ORIGIN OF ART exhibition are as
+        follows:</p>
+    <ul>
+        <li>Science: 21 Nov - 20 Feb 2010/11</li>
+        <li>Architecture: 6 Mar - 15 May 2011</li>
+        <li>History: 29 May - 21 Aug 2011</li>
+        <li>Religion: 28 Aug - 6 Nov 2011</li>
+    </ul>
+
+    <!-- Inline Elements  -->
+
+    <p>Timed to a single revolution of the planet around
+        the sun at a 23.4 degrees tilt that plays out the
+        rhythm of the seasons, this <em>Origins of Art</em>
+        cycle is organized around four themes: <b>science,
+            architecture, history</b> and <b>religion</b>.</p>
+
+    <div id="header">
+        <img src="images/logo.gif" alt="Anish Kapoor" />
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><!-- end of header -->
+
+    <p>Anish Kapoor won the Turner Prize in 1991 and
+        exhibited at the <span class="gallery">Tate
+            Modern</span> gallery in London in 2003.</p>
+
+    <iframe width="450" height="350" src="http://maps.google.co.uk/maps?q=moma+new+york
+&amp;output=embed">
+    </iframe> <br>
+
+    <iframe src="http://maps.google.co.uk/maps?q=moma+new+york
+&amp;output=embed" width="450" height="350" frameborder="0" scrolling="no">
+    </iframe> <br>
+
+    <!-- Assignment 9 Flash, Video & Audio -->
+
+    <video src="videos/puppy.mp4" poster="images/puppy.jpg" width="400" height="300" preload controls loop>
+        <p>A video of a puppy playing in the snow</p>
+    </video> <br>
+
+    <audio src="audio/audio.mp3" controls autoplay>
+        <p>This browser does not support our audio
+            format.</p>
+    </audio>
+</body>
+
+</html>
